@@ -40,6 +40,8 @@ public class Library implements Comparable<Library>{
             value += bookScores[book.getId()];
         });
         value = value/daysForSync;
+        
+        // After testing it turns out that sorting by SyncingTime only gives better results
         value = daysForSync;
     }
     
